@@ -8,7 +8,8 @@
       "_components": ["./src/components"],
       "_routes": ["./src/routes"],
       "_utils": ["./src/utils"],
-      "_views": ["./src/views"]
+      "_views": ["./src/views"],
+      "_reducer": ["./src/utils/redux/reducer"]
     }
   },
   "exclude": ["node_modules"]

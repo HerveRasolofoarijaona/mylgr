@@ -1,0 +1,33 @@
+container {
+  flex: 1;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+text {
+  text-align: center;
+}
+
+likeButton {
+  margin-top: 17;
+  margin-bottom: 'auto';
+  margin-left: 17;
+  margin-right: 17;
+  background-color: #253d61;
+  border-color: #253d61;
+}
+stretch {
+  flex: 1;
+  align-items: 'center';
+  justify-content: 'center';
+  transition: 'contain';
+}
+top {
+  flex: 4;
+  flex-direction: 'row';
+}
+bottom {
+  flex: 1;
+  flex-direction: 'column';
+}

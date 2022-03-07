@@ -1,3 +1,3 @@
-import * as app from './app';
+import styleApp from './app';
 
-export {app};
+export {styleApp};

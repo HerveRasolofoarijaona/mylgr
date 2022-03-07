@@ -1,17 +1,15 @@
-import React from 'react';
+// import TravelScreen from '../Views/Travel';
+// import BookingScreen from '../Views/Booking';
+// import AboutScreen from '../Views/About';
+// import CreditsScreen from '../Views/Credits';
 
-import {createStackNavigator} from '@react-navigation/stack';
-
-import HomeScreen from './../components/HomeScreen';
-import AcceuilScreen from './../components/AcceuilScreen';
-
-const {Navigator, Screen} = createStackNavigator();
-
-const HomeNavigator = () => (
-  <Navigator headerMode="none">
-    <Screen name="Home" component={HomeScreen} />
-    <Screen name="Acceuil" component={AcceuilScreen} />
-  </Navigator>
-);
-
-export default HomeNavigator;
+// /* Icon key is optional. It must be of type string and its value should match a valid provider icon
+//   name.
+//   To omit the icon just pass null on its value.
+// */
+// export default [
+//   {name: 'Travel', screen: TravelScreen, icon: 'airplane-takeoff', id:1},
+//   {name: 'Booking', screen: BookingScreen, icon: 'compass-outline', id:2},
+//   {name: 'About', screen: AboutScreen, icon: 'information-outline', id:3},
+//   {name: 'Credits', screen: CreditsScreen, icon: 'account-circle', id:4},
+// ];

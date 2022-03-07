@@ -2,7 +2,7 @@ import React from 'react';
 import {Layout} from '@ui-kitten/components';
 import {View, Image} from 'react-native';
 
-import {app} from '_styles';
+import {styleApp} from '_styles';
 
 class AcceuilScreen extends React.Component {
   toggleDrawer = () => {
@@ -13,11 +13,11 @@ class AcceuilScreen extends React.Component {
   render() {
     return (
       <>
-        <Layout style={app.styles.container}>
-          <View style={app.styles.top}>
+        <Layout style={styleApp.container}>
+          <View style={styleApp.top}>
             <Image
               source={require('./../assets/images/logo.png')}
-              style={app.styles.stretch}
+              style={styleApp.stretch}
             />
           </View>
         </Layout>
