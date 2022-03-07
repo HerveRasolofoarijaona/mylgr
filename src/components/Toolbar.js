@@ -6,7 +6,7 @@ import {View, StyleSheet} from 'react-native';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {goBack, navigateTo} from '../../Redux/actions';
-import {bgHeader} from '../../global.styles';
+import {bgHeader} from '_styles/global.styles';
 import ToolbarAndroid from '@react-native-community/toolbar-android';
 
 class Toolbar extends React.Component {

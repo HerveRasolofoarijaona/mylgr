@@ -14,6 +14,8 @@ module.exports = {
           _routes: './src/routes',
           _utils: './src/utils',
           _views: './src/views',
+          _redux: './src/utils/redux',
+          _reducer: './src/utils/redux/reducer',
         },
       },
     },
