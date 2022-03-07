@@ -1,14 +1,17 @@
 import React from 'react';
 import {ApplicationProvider, IconRegistry} from '@ui-kitten/components';
 import {EvaIconsPack} from '@ui-kitten/eva-icons';
+import {NavigationContainer} from '@react-navigation/native';
 import * as eva from '@eva-design/eva';
-import {AppViews} from '_views';
+import HomeNavigator from './routes';
 
 const App = () => (
   <>
     <IconRegistry icons={EvaIconsPack} />
     <ApplicationProvider {...eva} theme={eva.light}>
-      <AppViews.apps />
+      <NavigationContainer>
+        <HomeNavigator />
+      </NavigationContainer>
     </ApplicationProvider>
   </>
 );
