@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-no-undef */
+/* eslint-disable no-shadow */
 import React from 'react';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
@@ -15,15 +17,20 @@ import {
   bgDrawerInactiveItem,
   bgDrawerActiveItem,
   drawerHeaderColor,
-} from '../global.styles';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+} from '_styles/global.styles';
+
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import {navigateTo} from '_redux/action';
 
 const DrawerContent = ({navigateTo, activeRoute, routes, closeDrawer}) => (
   <ScrollView>
     <View style={styles.header}>
       <View style={styles.headerLogo}>
-        <Icon name="airplane-takeoff" size={50} color={drawerLogoColor} />
+        <MaterialCommunityIcons
+          name="airplane-takeoff"
+          size={50}
+          color={drawerLogoColor}
+        />
       </View>
       <View style={styles.subTitle}>
         <Text style={styles.drawerTitle}>Travel App</Text>
@@ -42,10 +49,10 @@ const DrawerContent = ({navigateTo, activeRoute, routes, closeDrawer}) => (
             ? [styles.drawerItem, styles.activeDrawerItem]
             : styles.drawerItem
         }>
-        {route.icon && (
+        {route.MaterialCommunityIcons && (
           <View style={styles.drawerItemLogo}>
-            <Icon
-              name={route.icon}
+            <MaterialCommunityIcons
+              name={route.MaterialCommunityIcons}
               size={30}
               color={activeRoute.name === route.name ? '#fff' : '#000'}
             />
@@ -53,6 +60,7 @@ const DrawerContent = ({navigateTo, activeRoute, routes, closeDrawer}) => (
         )}
         <Text
           style={
+            // eslint-disable-next-line react-native/no-inline-styles
             activeRoute.name === route.name ? {color: '#fff'} : {color: '#000'}
           }>
           {route.name}
@@ -66,7 +74,7 @@ DrawerContent.propTypes = {
   activeRoute: PropTypes.shape({
     name: PropTypes.string.isRequired,
     screen: PropTypes.any.isRequired,
-    icon: PropTypes.string.isRequired,
+    MaterialCommunityIcons: PropTypes.string.isRequired,
   }).isRequired,
   routes: PropTypes.arrayOf(PropTypes.object).isRequired,
   navigateTo: PropTypes.func.isRequired,
@@ -88,7 +96,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 32,
     overflow: 'hidden',
-    backgroundColor: '#fff',,
+    backgroundColor: '#fff',
   },
   subTitle: {
     height: 56,
@@ -118,7 +126,7 @@ const styles = StyleSheet.create({
     height: 50,
     paddingLeft: 16,
     borderBottomWidth: 2,
-    borderBottomColor: '#fff',,
+    borderBottomColor: '#fff',
   },
   drawerItemLogo: {
     paddingRight: 16,
