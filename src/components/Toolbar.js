@@ -1,11 +1,8 @@
-/* eslint-disable no-sparse-arrays */
-/* eslint-disable react-native/no-inline-styles */
-/* eslint-disable no-shadow */
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
-import {goBack, navigateTo} from '../../Redux/actions';
+import {goBack, navigateTo} from '_reduxs/action';
 import {bgHeader} from '_styles/global.styles';
 import ToolbarAndroid from '@react-native-community/toolbar-android';
 
@@ -45,11 +42,11 @@ class Toolbar extends React.Component {
           }
           overflowIcon="dots-vertical"
           style={{height: 56}}
-          actions={[
-            {title: 'About', show: 'never', iconName: 'information-outline'},
-            {title: 'Credits', show: 'never', iconName: 'account-circle'},
-            ,
-          ]}
+          // actions={[
+          //   {title: 'About', show: 'never', iconName: 'information-outline'},
+          //   {title: 'Credits', show: 'never', iconName: 'account-circle'},
+          //   ,
+          // ]}
           onActionSelected={this.onActionSelected}
         />
       </View>

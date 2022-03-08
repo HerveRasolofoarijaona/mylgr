@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
-import {navigateTo} from '_redux/action';
+import {navigateTo} from '_reduxs/action';
 const backgroundImage = require('../assets/images/background.jpg');
 
 const Login = ({activeRoute, navigateTo}) => (

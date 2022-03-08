@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-undef */
 /* eslint-disable no-shadow */
 import React from 'react';
 import {connect} from 'react-redux';
@@ -20,7 +19,7 @@ import {
 } from '_styles/global.styles';
 
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import {navigateTo} from '_redux/action';
+import {navigateTo} from '_reduxs/action';
 
 const DrawerContent = ({navigateTo, activeRoute, routes, closeDrawer}) => (
   <ScrollView>
@@ -52,7 +51,7 @@ const DrawerContent = ({navigateTo, activeRoute, routes, closeDrawer}) => (
         {route.MaterialCommunityIcons && (
           <View style={styles.drawerItemLogo}>
             <MaterialCommunityIcons
-              name={route.MaterialCommunityIcons}
+              name={route.icon}
               size={30}
               color={activeRoute.name === route.name ? '#fff' : '#000'}
             />
@@ -74,7 +73,7 @@ DrawerContent.propTypes = {
   activeRoute: PropTypes.shape({
     name: PropTypes.string.isRequired,
     screen: PropTypes.any.isRequired,
-    MaterialCommunityIcons: PropTypes.string.isRequired,
+    icon: PropTypes.string.isRequired,
   }).isRequired,
   routes: PropTypes.arrayOf(PropTypes.object).isRequired,
   navigateTo: PropTypes.func.isRequired,

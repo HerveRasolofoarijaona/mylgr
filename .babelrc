@@ -10,11 +10,11 @@
           "_assets": "./src/assets",
           "_styles": "./src/assets/styles",
           "_images": "./src/assets/images",
-          "_components": "./src/components",
+          "_component": "./src/components",
           "_routes": "./src/routes",
           "_utils": "./src/utils",
           "_views": "./src/views",
-          "redux": "./src/utils/redux",
+          "_reduxs": "./src/utils/redux",
           "_reducer": "./src/utils/redux/reducer"
         }
       }

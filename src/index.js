@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 
 import reducer from '_reducer';
-import {setNavigator, setActiveRoute} from '_reducer/action';
+import {setNavigator, setActiveRoute} from '_reduxs/action';
 import DrawerContent from '_components/DrawerContent';
 import Toolbar from '_components/Toolbar';
 import AppNavigation from '_routes/AppNavigation';

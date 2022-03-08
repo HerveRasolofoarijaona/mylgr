@@ -1,6 +1,6 @@
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
-import routes from './routes';
+import routes from './index';
 
 const routeConfig = {};
 
